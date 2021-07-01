@@ -2,10 +2,11 @@ const app= Vue.createApp({
   data(){
     return {
       showBooks: true,
+      url: 'http://www.google.com',
       books: [
-        {title: 'author of the wind', author: 'patrik rothfuss'},
-        {title: 'the way of kings', author: 'brandon sanderson'},
-        {title: 'the final empire', author: 'brandon sanderson'}
+        {title: 'author of the wind', author: 'patrik rothfuss', img: 'asset/1.jpg'},
+        {title: 'the way of kings', author: 'brandon sanderson', img: 'asset/2.jpg'},
+        {title: 'the final empire', author: 'brandon sanderson', img: 'asset/3.png'}
       ]
     }
   },

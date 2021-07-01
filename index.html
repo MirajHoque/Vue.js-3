@@ -23,9 +23,16 @@
 
   <div id="app">
 
+    <!--attribute binding-->
+    <!--
+      <a v-bind:href="url">best search engine ever</a>
+    -->
+    
+
     <div v-if="showBooks">
       <ul>
         <li v-for="element in books">
+          <img :src="element.img" alt="element.title">
           <h3>{{ element.title }}</h3>
           <p>{{ element.author }}</p>
         </li>
