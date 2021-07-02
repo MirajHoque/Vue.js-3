@@ -26,8 +26,17 @@ const app= Vue.createApp({
       this.x= e.offsetX;
       this.y= e.offsetY;
 
+    },
+    toggleFav(element){
+      element.isFav= !element.isFav;
     }
 
+  },
+
+  computed:{
+    filteredBooks(){
+      return this.books.filter((book)=> book.isFav);
+    }
   }
 });
 app.mount('#app');
